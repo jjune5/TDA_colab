@@ -7,8 +7,12 @@ Google Colab 에서 끝까지 돌려보는 노트북입니다.
 GTN(메타패스 자동 발견) → PDGNN(채널별 EPD) → semantic attention fusion → HAN 분류
 ```
 
-- 코드 본체(패키지·SLURM·테스트): https://github.com/jjune5/TDA
+- 코드 본체(패키지·테스트): https://github.com/jjune5/TDA
 - 노트북: [`TDA_ACM.ipynb`](TDA_ACM.ipynb)
+
+> **Colab 에서는 SLURM 을 쓰지 않습니다.** 노트북이 Colab GPU 런타임에서 `tda.train.run()`
+> 을 직접 호출해 끝까지 실행합니다. (SLURM 배치 스크립트는 클러스터 전용이며 본체 저장소의
+> `experiments/` 에만 있습니다 — Colab 에서는 무시하세요.)
 
 ## 사용법
 
